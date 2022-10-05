@@ -38,21 +38,6 @@ void blikac(void){
 	 }
 }
 
-/*void tlacitko(void){      // takhle funguje
-	static uint32_t old_s2;
-	static uint32_t off_time;
-	uint32_t new_s2 = GPIOC->IDR & (1<<1); // nahrání hodnoty tlačítka S1
-
-	if (Tick > off_time) {
-		GPIOB->BRR = (1<<0); // rozsvícení LED2
-	}
-
-	if (old_s2 && !new_s2) { // falling edge
-		off_time = Tick + LED_TIME_LONG;
-		GPIOB->BSRR = (1<<0); // zhasnutí LED2
-	}
-	old_s2 = new_s2;
-}*/
 void tlacitko(void){      // takhle funguje
 	static uint16_t debounce = 0xffff;
 	static uint32_t delay;
@@ -61,19 +46,14 @@ void tlacitko(void){      // takhle funguje
 		 debounce <<= 1;
 		 delay = Tick;
 
-		 if(GPIOC->IDR & (1<<1)){
+		 if(GPIOC->IDR & (1<<1)){ // kontrola zmáčknutí tlačítka S1
 			 debounce |= 0x0001;
 		 }
 		 if(debounce == 0x8000){
-			 GPIOB->ODR ^= (1<<0);
+			 GPIOB->ODR ^= (1<<0); // resetování LED2
 			 //off_time = Tick + LED_TIME_LONG;
 		}
 	 }
-
-
-	/*if (Tick > off_time) {
-			GPIOB->BRR = (1<<0); // zhasnutí LED2
-	}*/
 }
 
 int main(void)
