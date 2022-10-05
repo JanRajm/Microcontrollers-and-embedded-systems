@@ -29,7 +29,6 @@
 volatile uint32_t Tick = 0; // volatile aby fungovala v ISR i main
 
 
-
 void blikac(void){
 	 static uint32_t delay;
 	 if (Tick > delay + LED_TIME_BLINK) {
@@ -50,16 +49,14 @@ void tlacitko(void){      // takhle funguje
 			 debounce |= 0x0001;
 		 }
 		 if(debounce == 0x8000){
-			 GPIOB->ODR ^= (1<<0); // resetování LED2
-			 //off_time = Tick + LED_TIME_LONG;
+			 GPIOB->ODR ^= (1<<0); // togglování LED2
 		}
 	 }
 }
 
-int main(void)
-{
+int main(void){
 	RCC->APB2ENR |= RCC_APB2ENR_SYSCFGEN; // hodiny
-	RCC->AHBENR |= RCC_AHBENR_GPIOAEN | RCC_AHBENR_GPIOBEN | RCC_AHBENR_GPIOCEN; // enable hodin
+	RCC->AHBENR  |= RCC_AHBENR_GPIOAEN | RCC_AHBENR_GPIOBEN | RCC_AHBENR_GPIOCEN; // enable hodin
 	GPIOA->MODER |= GPIO_MODER_MODER4_0; // LED1 = PA4, output
 	GPIOB->MODER |= GPIO_MODER_MODER0_0; // LED2 = PB0, output
 	GPIOC->PUPDR |= GPIO_PUPDR_PUPDR0_0; // S2 = PC0, pullup
@@ -79,16 +76,14 @@ int main(void)
 	}
 }
 
-void EXTI0_1_IRQHandler(void)
- {
+void EXTI0_1_IRQHandler(void){
 	 if (EXTI->PR & EXTI_PR_PR0) { // check line 0 has triggered the IT
 		 EXTI->PR |= EXTI_PR_PR0; // clear the pending bit
 		 GPIOB->ODR ^= (1<<0); // inverze hodnoty portu B, pin 0, tj. LED2
 	 }
  }
 
-void SysTick_Handler(void)
- {
+void SysTick_Handler(void){
  Tick++;
  }
 
