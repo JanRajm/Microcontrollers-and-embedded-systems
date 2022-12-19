@@ -7,4 +7,4 @@
 ### Nezapomenout na:
 
 ### Display
-[kód: sct.h, sct.c]([https://www.edaplayground.com/x/X8dp](https://github.com/JanRajm/Microcontrollers-and-embedded-systems/tree/MSK/cv04/Core/Src))
+[kód:](https://github.com/JanRajm/Microcontrollers-and-embedded-systems/tree/MSK/cv04/Core/Src)
