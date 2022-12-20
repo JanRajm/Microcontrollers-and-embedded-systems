@@ -10,11 +10,11 @@
 - podmínka na ř. 126
 [cv. 4:](https://github.com/JanRajm/Microcontrollers-and-embedded-systems/blob/MSK/cv04/Core/Src/main.c)
 - podmínka na ř. 126
-'''c
+```c
 if(HAL_GetTick() > stary_cas + ZPOZDENI){
   ...;
 }
-'''
+```
 
 ### Display
 [cv. 4:](https://github.com/JanRajm/Microcontrollers-and-embedded-systems/tree/MSK/cv04/Core/Src)
