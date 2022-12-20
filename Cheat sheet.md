@@ -7,7 +7,7 @@
 
 ### Neblokující čekání
 [cv. 10:](https://github.com/JanRajm/Microcontrollers-and-embedded-systems/blob/MSK/cv10/Core/Src/main.c)
-- ř. podmínka na ř. 126
+- podmínka na ř. 126
 
 ### Display
 [cv. 4:](https://github.com/JanRajm/Microcontrollers-and-embedded-systems/tree/MSK/cv04/Core/Src)
