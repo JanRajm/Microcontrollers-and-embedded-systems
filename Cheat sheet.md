@@ -6,7 +6,8 @@
 [cv. 5: ](https://github.com/JanRajm/Microcontrollers-and-embedded-systems/blob/MSK/cv05/cv05/Core/Src/main.c)
 
 ### Neblokující čekání
-[cv. ](https://www.edaplayground.com/x/X8dp)
+[cv. 10:](https://github.com/JanRajm/Microcontrollers-and-embedded-systems/blob/MSK/cv10/Core/Src/main.c)
+- ř. podmínka na ř. 126
 
 ### Display
 [cv. 4:](https://github.com/JanRajm/Microcontrollers-and-embedded-systems/tree/MSK/cv04/Core/Src)
