@@ -24,7 +24,7 @@ if(HAL_GetTick() > stary_cas + ZPOZDENI){
  - PB5 = SCT_NLA
  - PB10 = SCT_NOE
 
-### Přehled cvičení:
+#### Přehled cvičení:
  - 4. ADC, NTC teploměr, IIR, display, bargraf
  - 5. UART, EEPROM
  - 6. 1-wire teploměr, ADC, NTC teploměr, display
