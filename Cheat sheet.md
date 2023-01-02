@@ -21,7 +21,7 @@ if(HAL_GetTick() > stary_cas + ZPOZDENI){
 
 ### Přehled cvičení:
  - 3.) enkodér [odkaz](https://github.com/JanRajm/Microcontrollers-and-embedded-systems/blob/MSK/cv03_HAL/Core/Src/main.c)
- - 4.) ADC, NTC teploměr, IIR, display, bargraf [odkaz](https://github.com/JanRajm/Microcontrollers-and-embedded-systems/blob/MSK/cv04/Core/Src/main.c)
+ - 4.) ADC, NTC teploměr, potenciometr, IIR, display, bargraf [odkaz](https://github.com/JanRajm/Microcontrollers-and-embedded-systems/blob/MSK/cv04/Core/Src/main.c)
  - 5.) UART, EEPROM [odkaz](https://github.com/JanRajm/Microcontrollers-and-embedded-systems/blob/MSK/cv05/cv05/Core/Src/main.c)
  - 6.) 1-wire teploměr, ADC, NTC teploměr, display  [odkaz](https://github.com/JanRajm/Microcontrollers-and-embedded-systems/blob/MSK/cv06/Core/Src/main.c)
  - 7.) freeRTOS, akcelerometr [odkaz](https://github.com/JanRajm/Microcontrollers-and-embedded-systems/blob/MSK/cv07/Core/Src/main.c)
