@@ -18,7 +18,15 @@ if(HAL_GetTick() > stary_cas + ZPOZDENI){
 
 ### Display
 [cv. 4:](https://github.com/JanRajm/Microcontrollers-and-embedded-systems/tree/MSK/cv04/Core/Src)
+#### Piny displaye:
+ - PB3 = SCT_CLK
+ - PB4 = SCT_SDI
+ - PB5 = SCT_NLA
+ - PB10 = SCT_NOE
 
 ### Nezapomenout na:
+#### Tlačítka:
+ - PC0 = S2
+ - PC1 = S1
 
 
